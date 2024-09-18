@@ -15,6 +15,7 @@
 		B2BB5B412C9AF0B8003EE159 /* pomodoroSimpleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB5B402C9AF0B8003EE159 /* pomodoroSimpleTests.swift */; };
 		B2BB5B4B2C9AF0B8003EE159 /* pomodoroSimpleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB5B4A2C9AF0B8003EE159 /* pomodoroSimpleUITests.swift */; };
 		B2BB5B4D2C9AF0B8003EE159 /* pomodoroSimpleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB5B4C2C9AF0B8003EE159 /* pomodoroSimpleUITestsLaunchTests.swift */; };
+		B2BB5B5C2C9AF10E003EE159 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB5B5B2C9AF10E003EE159 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B2BB5B462C9AF0B8003EE159 /* pomodoroSimpleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pomodoroSimpleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BB5B4A2C9AF0B8003EE159 /* pomodoroSimpleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomodoroSimpleUITests.swift; sourceTree = "<group>"; };
 		B2BB5B4C2C9AF0B8003EE159 /* pomodoroSimpleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pomodoroSimpleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2BB5B5B2C9AF10E003EE159 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		B2BB5B2C2C9AF0B6003EE159 /* pomodoroSimple */ = {
 			isa = PBXGroup;
 			children = (
+				B2BB5B592C9AF0FC003EE159 /* Views */,
 				B2BB5B2D2C9AF0B6003EE159 /* pomodoroSimpleApp.swift */,
 				B2BB5B2F2C9AF0B6003EE159 /* ContentView.swift */,
 				B2BB5B312C9AF0B6003EE159 /* Item.swift */,
@@ -128,6 +131,30 @@
 				B2BB5B4C2C9AF0B8003EE159 /* pomodoroSimpleUITestsLaunchTests.swift */,
 			);
 			path = pomodoroSimpleUITests;
+			sourceTree = "<group>";
+		};
+		B2BB5B592C9AF0FC003EE159 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2BB5B5A2C9AF104003EE159 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2BB5B5A2C9AF104003EE159 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B2BB5B5D2C9AF113003EE159 /* Components */,
+				B2BB5B5B2C9AF10E003EE159 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B2BB5B5D2C9AF113003EE159 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2BB5B302C9AF0B6003EE159 /* ContentView.swift in Sources */,
+				B2BB5B5C2C9AF10E003EE159 /* HomeView.swift in Sources */,
 				B2BB5B322C9AF0B6003EE159 /* Item.swift in Sources */,
 				B2BB5B2E2C9AF0B6003EE159 /* pomodoroSimpleApp.swift in Sources */,
 			);
@@ -429,11 +457,14 @@
 				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pomotimer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,11 +489,14 @@
 				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pomotimer;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
