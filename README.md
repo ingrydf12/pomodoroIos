@@ -13,8 +13,11 @@ Entender mais o funcionamento do timer e notificações no ecossistema iOS, no g
 
 ### Screenshots
 
-![Cronômetro rodando na aplicação](image.png)
-![Página inicial](image-1.png)
-![Página inicial no modo claro](image-2.png)
+<div align=center>
+<img src="image.png" alt="Cronômetro rodando na aplicação" width="200"/>
+<img src="image-1.png" alt="Página inicial" width="200"/>
+<img src="image-2.png" alt="Página inicial no modo claro" width="200"/>
+
+</div>
 
 > Made in SwiftUI.
