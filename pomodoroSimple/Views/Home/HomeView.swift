@@ -18,11 +18,16 @@ struct HomeView: View {
                 .ignoresSafeArea()
             
             VStack {
-                if (viewModel.isTimerRunning != true) {
+                if (viewModel.isTimerRunning != true && viewModel.isTimerPaused == true){
+                    Image(systemName: "pause.circle.fill")
+                        .resizable()
+                        .foregroundStyle(Color.stopRed)
+                        .frame(width: 100, height: 100)
+                } else    if (viewModel.isTimerRunning != true) {
                     HStack{
                         HeaderCat()
                     }.padding(4)
-                } else {
+                }else {
                     RunningCat()
                 }
                 

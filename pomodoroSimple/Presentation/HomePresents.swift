@@ -23,7 +23,7 @@ final class HomePresents {
     func playSoundToEnd() {
         AudioServicesPlaySystemSound(1009)
     }
-    
+    //MARK: - Inicio
     func startTimer() {
         if !isTimerRunning {
             isTimerRunning = true
